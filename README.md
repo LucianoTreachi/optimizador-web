@@ -47,7 +47,7 @@ Es ideal tanto para desarrolladores novatos como para expertos que buscan mejora
 
 - SEO
 - UX/UI
-- Velocidad y rendimiento general
+- Velocidad
 - Accesibilidad
 
 ## Herramientas online disponibles
