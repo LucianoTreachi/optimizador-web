@@ -47,6 +47,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.85;
+}
+
 button,
 input,
 textarea,
@@ -265,6 +269,23 @@ li span {
 .footer {
   background-color: var(--footer);
   padding: 5rem 2.5rem;
+  position: relative;
+}
+
+.back-to-top-button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back-to-top-button svg {
+  width: 4rem;
+  height: 4rem;
+  fill: #eee;
+  filter: drop-shadow(0 5px 10px rgba(255, 208, 0, 0.15))
 }
 
 .footer .container {
@@ -342,6 +363,7 @@ li span {
   }
 
   .footer {
+    margin-top: 2rem;
     padding: 2.5rem 1.25rem;
   }
 
