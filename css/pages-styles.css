@@ -306,7 +306,7 @@ li span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--size10);
+  gap: 0.5rem;
 }
 
 .footer a {
@@ -368,18 +368,12 @@ li span {
   }
 
   .footer p {
+    margin-top: 1rem;
     font-size: 1rem;
   }
 
   .footer a:hover {
     color: var(--white);
-  }
-
-  .github-icon,
-  .linkedin-icon,
-  .website-icon {
-    width: 1.875rem;
-    height: 1.875rem;
   }
 }
 
