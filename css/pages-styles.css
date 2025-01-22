@@ -128,19 +128,19 @@ p {
   top: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 94%;
+  width: 90%;
   max-width: 43.75rem;
   height: 2rem;
   overflow: hidden;
   background-color: #ddd;
-  border-radius: var(--border-radius);
+  border-radius: 0.5rem;
   z-index: 2;
 }
 
 .progress-bar {
   width: 0%;
   height: 100%;
-  border-radius: var(--border-radius);
+  border-radius: 0.5rem;
   transition: width 0.3s ease-in-out;
 }
 
