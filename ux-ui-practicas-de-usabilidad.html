@@ -50,10 +50,16 @@
         </a>
         <h1 class="hero-title">UX/UI - Prácticas de Usabilidad</h1>
 
+        <!-- Progress bar -->
         <div class="progress-container">
           <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
             aria-label="Barra de progreso de tareas completadas"></div>
-          <strong class="progress-percentage">0%</strong>
+          <div class="number-of-items">
+            <span class="checked-items"><!-- value updated by JS --></span>
+            /
+            <span class="total-items"><!-- value updated by JS --></span>
+          </div>
+          <div class="progress-percentage"><!-- value updated by JS --></div>
         </div>
       </div>
     </section>
@@ -83,14 +89,16 @@
           <li>
             <input type="checkbox" name="checkbox" id="checkbox-font-size" class="checkbox">
             <label for="checkbox-font-size">
-              <span>Tamaño mínimo del texto</span> ¿El texto tiene un tamaño mínimo de 1rem (16px)? Esto garantiza que el contenido sea fácilmente visible, incluso en pantallas pequeñas.
+              <span>Tamaño mínimo del texto</span> ¿El texto tiene un tamaño mínimo de 1rem (16px)? Esto garantiza que
+              el contenido sea fácilmente visible, incluso en pantallas pequeñas.
             </label>
           </li>
 
           <li>
             <input type="checkbox" name="checkbox" id="checkbox-line-height" class="checkbox">
             <label for="checkbox-line-height">
-              <span>Altura de línea del texto</span> ¿El texto tiene una altura de línea definida (line-height)? Esto proporciona suficiente espacio entre las líneas, evitando la fatiga visual.
+              <span>Altura de línea del texto</span> ¿El texto tiene una altura de línea definida (line-height)? Esto
+              proporciona suficiente espacio entre las líneas, evitando la fatiga visual.
             </label>
           </li>
 
@@ -176,7 +184,8 @@
           <li>
             <input type="checkbox" name="checkbox" id="checkbox-intrusive-modals" class="checkbox">
             <label for="checkbox-intrusive-modals">
-              <span>Ventanas emergentes</span> ¿Se evita mostrar ventanas emergentes de manera repentina a los visitantes? Esto reduce
+              <span>Ventanas emergentes</span> ¿Se evita mostrar ventanas emergentes de manera repentina a los
+              visitantes? Esto reduce
               distracciones innecesarias.
             </label>
           </li>
@@ -193,14 +202,17 @@
           <li>
             <input type="checkbox" name="checkbox" id="checkbox-links" class="checkbox">
             <label for="checkbox-links">
-              <span>Enlaces - funcionamiento</span> ¿Todos los enlaces están funcionando correctamente y llevan al destino esperado? Esto evita frustraciones para el usuario.
+              <span>Enlaces - funcionamiento</span> ¿Todos los enlaces están funcionando correctamente y llevan al
+              destino esperado? Esto evita frustraciones para el usuario.
             </label>
           </li>
 
           <li>
             <input type="checkbox" name="checkbox" id="checkbox-links-target-blank" class="checkbox">
             <label for="checkbox-links-target-blank">
-              <span>Enlaces que abren nuevas pestañas</span> ¿Los enlaces que abren nuevas pestañas con target="_blank" incluyen el atributo rel="noreferrer"? Esto protege al usuario contra riesgos de seguridad y mejora el rendimiento.
+              <span>Enlaces que abren nuevas pestañas</span> ¿Los enlaces que abren nuevas pestañas con target="_blank"
+              incluyen el atributo rel="noreferrer"? Esto protege al usuario contra riesgos de seguridad y mejora el
+              rendimiento.
             </label>
           </li>
 
@@ -215,7 +227,8 @@
           <li>
             <input type="checkbox" name="checkbox" id="checkbox-adaptability" class="checkbox">
             <label for="checkbox-adaptability">
-              <span>Adaptación a distintos dispositivos</span> ¿La interfaz se adapta correctamente a distintos dispositivos? (PC, Notebook, Tablet, móvil). Esto mejora la experiencia en cualquier pantalla.
+              <span>Adaptación a distintos dispositivos</span> ¿La interfaz se adapta correctamente a distintos
+              dispositivos? (PC, Notebook, Tablet, móvil). Esto mejora la experiencia en cualquier pantalla.
             </label>
           </li>
 

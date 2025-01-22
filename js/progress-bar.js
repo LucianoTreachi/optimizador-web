@@ -3,10 +3,15 @@ const heroTitle = document.querySelector('.hero-title');
 const localStorageKey = heroTitle.textContent.trim();
 
 // Progress elements and checkboxes
-const checkboxes = document.querySelectorAll('.checkbox');
 const progressBar = document.querySelector('.progress-bar');
 const progressPercentage = document.querySelector('.progress-percentage');
+const totalItems = document.querySelector('.total-items');
+const checkedItems = document.querySelector('.checked-items');
+
+const checkboxes = document.querySelectorAll('.checkbox');
 const totalCheckboxes = checkboxes.length;
+
+totalItems.textContent = checkboxes.length;
 
 // Clear button
 const clearButton = document.querySelector('.clear-checkboxes-btn');
@@ -59,6 +64,9 @@ function updateProgressBar() {
   progressBar.style.backgroundColor = interpolateColor(progress);
   progressPercentage.textContent = progress + '%';
 
+  // Update checked items counter
+  checkedItems.textContent = checkedCheckboxes;
+
   // Update ARIA attribute for accessibility
   progressBar.setAttribute('aria-valuenow', progress);
 
@@ -74,6 +82,10 @@ function restoreProgress() {
   checkboxes.forEach((checkbox, index) => {
     checkbox.checked = storedCheckedIndexes.includes(index);
   });
+
+  // Update checked items counter
+  const checkedCheckboxes = document.querySelectorAll('.checkbox:checked').length;
+  checkedItems.textContent = checkedCheckboxes;
 
   // Update progress bar visually 
   progressBar.style.width = storedProgress + '%';

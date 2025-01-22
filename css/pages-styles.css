@@ -140,6 +140,16 @@ p {
   transition: width 0.3s ease-in-out;
 }
 
+.number-of-items {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+  white-space: nowrap;
+  position: absolute;
+  top: 0.35rem;
+  left: 0.5rem;
+}
+
 .progress-percentage {
   font-size: 1rem;
   font-weight: 600;
