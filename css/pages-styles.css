@@ -333,6 +333,10 @@ li span {
 
 /* 576px */
 @media (max-width: 36rem) {
+  button:hover {
+    opacity: 1;
+  }
+
   .hero-section {
     padding: 5rem 1.25rem 0;
   }
