@@ -310,6 +310,7 @@ li span {
 
 .footer a {
   color: var(--white);
+  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,8 +325,8 @@ li span {
 .github-icon,
 .linkedin-icon,
 .website-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* RESPONSIVE */
