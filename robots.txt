@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://optimizadorweb.site/sitemap.xml
+Sitemap: https://optimizadorweb.vercel.app/sitemap.xml
